@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="speed" name="Ram Clock Speed">
-    <input type="text" id="latency" name="CL Latency">
+
+    <p>This is a RAM latency calculator.</br>
+        It takes the data rate (MHz) and cas latency (CL),</br>
+        then calculates the absolute latency for memory accesses in nanoseconds.</p>
+
+    Mhz<input type="number" id="clock" onChange="calculateForm();" value="3000"></br>
+    RAM CR: <input type="number" id="CR" onChange="calculateForm();" value="16"></br>
+
+    Calculated Nanoseconds: </br>
+        <div id="output">10</div>
+
     <script src="script.js"></script>
 
 </body>
